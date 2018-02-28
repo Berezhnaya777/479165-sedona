@@ -1,9 +1,7 @@
-# Личный проект «Седона»
+﻿# Личный проект «Седона»
 
 * Студент: [Илона Бережная](https://up.htmlacademy.ru/htmlcss/20/user/479165).
-* Наставник: `Неизвестно`.
-
----
+* Наставник: [Удовенко Марина](https://up.htmlacademy.ru/htmlcss/19/user/7570).---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
