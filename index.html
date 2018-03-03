@@ -5,8 +5,140 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/index-logo.svg" width="368" height="153" alt="Логотип «Sedona»">
+        </a>
+        <ul class="navigation-info">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="photo-video.html">Фото и видео</a></li>
+        </ul>
+        <ul class="navigation-coordinate">
+          <li><a href="map-of-state.html">Карта штата</a></li>
+          <li><a href="hotels.html">Гостинницы</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+    <main class="container">
+
+      <h1 class="visually-hidden">Сайт«Sedona»</h1>
+
+      <figure>
+        <img src="img/main-image.jpg" width="368" height="153" alt="Добро пожаловать в Седону">
+      </figure>
+
+      <section class="dignities">
+        <b>Седона - небольшой городок в Аризон, заслуживающий большего</b>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <ul class="dignities-list">
+          <li class="dignities-item">
+            <h2>Настоящий городок</h2>
+            <span>N1</span><br/>
+            <p class="dignities-item-info">Седона - не атракцион для туристов, там течет своя жизнь</p>
+            <p class="dignities-item-image">
+              <img src="../img/photo1.png" width="220" height="165" alt="Фотография окрестностей Седоны">
+            </p>
+              <ul class="opportunity-list">
+                <li class="opportunity-item">
+                  <h2><span class="home">Жилье</span></h2>
+                  <p class="opportunity-item-info">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                </li>
+                <li class="opportunity-item">
+                  <h2><span class="food">Еда</span></h2>
+                  <p class="opportunity-item-info">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                </li>
+                <li class="opportunity-item">
+                  <h2><span class="prize">Сувениры</span></h2>
+                  <p class="opportunity-item-info">Не только китайского, но и местного производства!</p>
+                </li>
+            </ul>
+          </li>
+          <li class="dignities-item">
+            <p class="dignities-item-image">
+              <img src="../img/photo1.png" width="220" height="165" alt="Фотография моста дьявола">
+            </p>
+            <h2>Там есть мост дьявола</h2>
+            <span>N2</span><br/>
+            <p class="dignities-item-info">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </li>
+          <li class="dignities-item">
+            <h2>Небольшая площадь</h2>
+            <span>N3</span><br/>
+            <p class="dignities-item-info">Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="dignities-item">
+            <h2>Красивая дорога</h2>
+            <span>N4</span><br/>
+            <p class="dignities-item-info">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="dignities-item">
+            <h2>Мало турисов</h2>
+            <span>N5</span><br/>
+            <p class="dignities-item-info">Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="search-tour">
+        <b class="search-tour interested">Заинтересовались?</b>
+        <p>Укажите предпологаемые даты поездки,
+          и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+
+        <p class="map">
+          <img src="../img/map.png" width="220" height="165" alt="Карта Седоны">
+        </p>
+
+        <section class="appointment">
+          <h2>Поиск гостиницы в Седоне</h2>
+          <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="appointment-item">
+              <label for="appointment-date-arrive">Дата заезда:</label>
+              <input id="appointment-date-arrive" type="text" name="date" value="24 апреля 2017" placeholder="В формате дд-мм-гггг">
+            </p>
+            <p class="appointment-item">
+              <label for="appointment-date-leave">Дата выезда:</label>
+              <input id="appointment-date-leave" type="text" name="date" value="4 июля 2017"  placeholder="В формате дд-мм-гггг">
+            </p>
+            <p class="appointment-item">
+              <label for="appointment-grownup">Взрослые:</label>
+              <button class="appointment-grownup minus" type="button" disabled="">-</button>
+              <input id="appointment-grownup" type="text"  name="count" value="1">
+              <button class="appointment-grownup plus" type="button" disabled="">+</button>
+            </p>
+            <p class="appointment-item">
+              <label for="appointment-children">Дети:</label>
+              <button class="appointment-children minus" type="button" disabled="">-</button>
+              <input id="appointment-children" type="text"  name="count" value="1">
+              <button class="appointment-children plus" type="button" disabled="">+</button>
+            </p>
+            <button class="button" type="submit">Найти</button>
+          </form>
+        </section>
+      </section>
+
+    </main>
+
+    <footer class="main-footer">
+
+      <h2>#visitsedona</h2>
+
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">YouTube</a></li>
+        </ul>
+      </div>
+
+      <p class="footer-copyright">Website by
+        <a href="https://htmlacademy.ru">
+          <img src="img/index-logo.svg" width="368" height="153" alt="Логотип «HtmlAcademy»">
+        </a>
+      </p>
+
+    </footer>
 
   </body>
 </html>
