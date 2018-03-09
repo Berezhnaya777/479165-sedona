@@ -25,30 +25,73 @@
 
       <section class="filters">
         <h1 class="visually-hidden">Подбор жилья по критериям</h1>
-        <!-- Здесь будет форма -->
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
+                <label for="filter-pool">Бассейн</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parkland" id="filter-parkland">
+                <label for="filter-parkland">Парковка</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi">
+                <label for="filter-wi-fi">Wi-fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+                <label for="filter-hotel">Гостинница</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
+                <label for="filter-motel">Мотель</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
+                <label for="filter-apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Cтоимость в сутки(Р):</legend>
+            <!--Здесь будет форма-->
+          </fieldset>
+          <button type="submit" class="filter-button button">Показать</button>
+        </form>
       </section>
 
       <section class="filter filter-catalog">
-      <fiedlist>
-        <legend>Найдено:3</legend>
-          <ul class="filter-list">
-            <li class="filter-option">
-              <a href="#">По цене</a>
-            </li>
-            <li class="filter-option">
-              <a href="#">По типу</a>
-            </li>
-            <li class="filter-option">
-              <a href="#">По рейтингу</a>
-            </li>
-            <li class="filter-option">
-              <a href="#">По возрастанию</a>
-            </li>
-            <li class="filter-option">
-              <a href="#">По убыванию</a>
-            </li>
-          </ul>
-        </fiedlist>
+        <h2>Найдено:3</h2>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Сортировка</legend>
+            <ul class="filter-list">
+              <li class="filter-option">
+                <a href="#">По цене</a>
+              </li>
+              <li class="filter-option">
+                <a href="#">По типу</a>
+              </li>
+              <li class="filter-option">
+                <a href="#">По рейтингу</a>
+              </li>
+              <li class="filter-option">
+                <a href="#">По возрастанию</a>
+              </li>
+              <li class="filter-option">
+                <a href="#">По убыванию</a>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
       </section>
 
       <section class="filter-results">
