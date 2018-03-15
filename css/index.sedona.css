@@ -1,0 +1,392 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  background-image: url("img/main-image.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.dot{
+  border-bottom: 1px dashed #000000;
+}
+
+a.dot:hover{
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.button {
+  font-size: 21px;
+  font-weight: 400;
+  color: #ffffff;
+
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #81b3d2;
+  border: none;
+}
+
+.button:hover,
+.button:focus{
+  background-color: #669ec0;
+  border: none;
+}
+
+.button:active {
+  opacity: 0.3;
+
+  background-color: #5496bd;
+  border: none;
+}
+
+.button-brown{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #ffffff;
+
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #766357;
+  border: none;
+}
+
+.button-brown:hover,
+.button-brown:focus{
+  background-color: #604e43;
+  border: none;
+}
+
+.button-brown:active {
+  opacity: 0.3;
+
+  background-color: #503e33;
+  border: none;
+}
+
+.filter-button{
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.filter-button:hover{
+  color: #000000;
+
+  background-color: #ffffff;
+  border: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.info-navigation,
+.coordinate-navigation{
+  list-style: none;
+}
+
+.info-navigation a,
+.coordinate-navigation a{
+  color: #000000;
+}
+
+.info-navigation a:hover,
+.coordinate-navigation a:hover{
+  color: #81b3d2;
+}
+
+.info-navigation a:focus,
+.coordinate-navigation a:focus{
+  color: #ffffff;
+
+  opacity: 0.3;
+}
+
+.info-navigation a:active,
+.coordinate-navigation a:active {
+  color: #766357;
+}
+
+.dignities{
+  text-align: center;
+}
+
+.dignities b{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.five-dignities{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.dignities-list{
+  list-style: none;
+}
+
+.dignities-item-blue h2{
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.dignities-item-blue .dignities-item-info,
+.dignities-item-blue span{
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.dignities-item-blue{
+  background-color: #81b3d2;
+  background-image: url("../img/pattern-blue.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.dignities-item-gray h2{
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.dignities-item-gray .dignities-item-info,
+.dignities-item-gray span{
+  font:inherit;
+}
+
+.dignities-item-gray{
+  background-color: #eeeeee;
+  background-image: url("../img/pattern-gray.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.opportunity-list{
+  list-style: none;
+}
+
+.opportunity-item h2{
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.opportunity-item p{
+  font:inherit;
+}
+
+.search-tour{
+ text-align: center;
+}
+
+.search-tour .interested{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.search-tour p{
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.appointment-item label,
+.appointment-item input{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.appointment-item input{
+  background-color: #f2f2f2;
+  background-position: top center;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.appointment-item input:hover{
+  background-color: #ebebeb;
+  background-position: top center;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.appointment-item input:focus{
+  background-color: transparent;
+  border: 2px solid #e5e5e5;
+}
+
+.filters{
+  background-color: #000000;
+  background-image: url("../img/filter-background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.sorting h2{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.sorting fieldset {
+  border: none;
+}
+
+.sorting legend {
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.sorting ul {
+  list-style: none;
+}
+
+
+.sorting-option a{
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+
+  opacity: 0.3;
+}
+
+.sorting-option a:hover{
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #81b3d2;
+}
+
+.sorting-option a:focus{
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.sorting-option a:active{
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #81b3d2;
+}
+
+.filter-results ul{
+  list-style: none;
+}
+
+
+.filter-results-detail a{
+  font: inherit;
+
+  color: #ffffff;
+}
+
+.filter-results-name{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.filter-results-name:hover{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #81b3d2;
+}
+
+.filter-results-name:focus{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+
+  opacity: 0.3;
+}
+
+.filter-results-rating{
+  font: inherit;
+  color: #666666;
+
+  background-color: #f2f2f2;
+}
+
+.main-footer {
+  color: #000000;
+
+  text-align: center;
+
+  background-color: #ffffff;
+  background-image: url("img/light.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.main-footer h2{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: #81b3d2;
+}

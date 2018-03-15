@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  background-image: url("img/light.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.info-navigation,
+.coordinate-navigation{
+  list-style: none;
+}
+
+.info-navigation a,
+.coordinate-navigation a{
+  color: #000000;
+}
+
+.info-navigation a:hover,
+.info-navigation a:focus,
+.coordinate-navigation a:hover,
+.coordinate-navigation a:focus{
+  color: #81b3d2;
+}
+
+.info-navigation a:active,
+.coordinate-navigation a:active {
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+.dignities{
+  text-align: center;
+}
+
+.dignities b{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.five-dignities{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.dignities-list{
+  list-style: none;
+}
+
+.dignities-list h2{
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.dignities-item-info,
+.dignities-item span{
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.dignities-item:first-child,
+.dignities-item:nth-child(2){
+  background-color: #81b3d2;
+  background-image: url("../img/pattern-blue.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.dignities-item:nth-child(3) h2,
+.dignities-item:nth-child(4) h2,
+.dignities-item:nth-child(5) h2{
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.dignities-item:nth-child(3) .dignities-item-info,
+.dignities-item:nth-child(4) .dignities-item-info,
+.dignities-item:nth-child(5) .dignities-item-info,
+.dignities-item:nth-child(3) span,
+.dignities-item:nth-child(4) span,
+.dignities-item:nth-child(5) span{
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.dignities-item:nth-child(3),
+.dignities-item:nth-child(4),
+.dignities-item:nth-child(5){
+  background-color: #eeeeee;
+  background-image: url("../img/pattern-gray.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+}

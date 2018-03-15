@@ -3,18 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/index.sedona.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <a class="main-header-logo" href="index.html">
         <img src="img/index-logo.png" width="138" height="70" alt="Логотип «Sedona»">
       </a>
       <nav class="main-navigation">
-        <ul class="navigation-info">
+        <ul class="info-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo-video.html">Фото и видео</a></li>
         </ul>
-        <ul class="navigation-coordinate">
+        <ul class="coordinate-navigation">
           <li><a href="map-of-state.html">Карта штата</a></li>
           <li><a href="hotels.html">Гостинницы</a></li>
         </ul>
@@ -30,16 +33,16 @@
             <legend>Инфраструктура:</legend>
             <ul>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
                 <label for="filter-pool">Бассейн</label>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parkland" id="filter-parkland">
                 <label for="filter-parkland">Парковка</label>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parkland" id="filter-parkland">
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi">
                 <label for="filter-wi-fi">Wi-fi</label>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi">
               </li>
             </ul>
           </fieldset>
@@ -47,16 +50,16 @@
             <legend>Тип жилья:</legend>
             <ul>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
                 <label for="filter-hotel">Гостинница</label>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
                 <label for="filter-motel">Мотель</label>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
                 <label for="filter-apartments">Апартаменты</label>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
               </li>
             </ul>
           </fieldset>
@@ -64,29 +67,29 @@
             <legend>Cтоимость в сутки(Р):</legend>
             <!--Здесь будет форма-->
           </fieldset>
-          <button type="submit" class="filter-button button">Показать</button>
+          <button type="submit" class="button filter-button">Показать</button>
         </form>
       </section>
 
-      <section class="filter filter-catalog">
+      <section class="sorting sorting-catalog">
         <h2>Найдено:3</h2>
-        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <form class="sorting" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend>Сортировка</legend>
-            <ul class="filter-list">
-              <li class="filter-option">
-                <a href="#">По цене</a>
+            <ul class="sorting-list">
+              <li class="sorting-option">
+                <a class="dot" href="#">По цене</a>
               </li>
-              <li class="filter-option">
-                <a href="#">По типу</a>
+              <li class="sorting-option">
+                <a class="dot" href="#">По типу</a>
               </li>
-              <li class="filter-option">
-                <a href="#">По рейтингу</a>
+              <li class="sorting-option">
+                <a class="dot" href="#">По рейтингу</a>
               </li>
-              <li class="filter-option">
+              <li class="sorting-option-up">
                 <a href="#">По возрастанию</a>
               </li>
-              <li class="filter-option">
+              <li class="sorting-option-down">
                 <a href="#">По убыванию</a>
               </li>
             </ul>
@@ -110,7 +113,7 @@
                 <a class="button" href="#">Подробнее</a>
               </p>
               <p class="filter-results-detail">
-                <a class="button button-book" href="#">Забронировать</a>
+                <a class="button button-brown" href="#">Забронировать</a>
               </p>
             </div>
             <p class="filter-results-rating">
@@ -130,7 +133,7 @@
                 <a class="button" href="#">Подробнее</a>
               </p>
               <p class="filter-results-detail">
-                <a class="button button-book" href="#">Забронировать</a>
+                <a class="button button-brown" href="#">Забронировать</a>
               </p>
             </div>
             <p class="filter-results-rating">
@@ -150,7 +153,7 @@
                 <a class="button" href="#">Подробнее</a>
               </p>
               <p class="filter-results-detail">
-                <a class="button button-book" href="#">Забронировать</a>
+                <a class="button button-brown" href="#">Забронировать</a>
               </p>
             </div>
             <p class="filter-results-rating">
@@ -172,7 +175,7 @@
           <li><a class="social-button" href="#">Инстаграм</a></li>
           <li><a class="social-button" href="#">Фейсбук</a></li>
           <li><a class="social-button" href="#">YouTube</a></li>
-          </ul>
+        </ul>
       </div>
 
       <p class="footer-copyright">Website by
