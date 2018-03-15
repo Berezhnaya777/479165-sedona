@@ -29,6 +29,7 @@ a.dot:hover{
 
 .button {
   font-size: 21px;
+  line-height: 26px;
   font-weight: 400;
   color: #ffffff;
 
@@ -272,10 +273,16 @@ a.dot:hover{
   list-style: none;
 }
 
+.filter-option label{
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
 .sorting h2{
   font-size: 21px;
   line-height: 26px;
-  font-weight: 400;
+  font-weight: 700;
   color: #000000;
 }
 
@@ -331,6 +338,7 @@ a.dot:hover{
 
 .filter-results-detail a{
   font: inherit;
+  font-weight: 700;
 
   color: #ffffff;
 }
@@ -338,21 +346,21 @@ a.dot:hover{
 .filter-results-name{
   font-size: 21px;
   line-height: 26px;
-  font-weight: 400;
+  font-weight: 700;
   color: #000000;
 }
 
 .filter-results-name:hover{
   font-size: 21px;
   line-height: 26px;
-  font-weight: 400;
+  font-weight: 700;
   color: #81b3d2;
 }
 
 .filter-results-name:focus{
   font-size: 21px;
   line-height: 26px;
-  font-weight: 400;
+  font-weight: 700;
   color: #000000;
 
   opacity: 0.3;
