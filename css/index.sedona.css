@@ -99,6 +99,7 @@ a.dot:hover{
 
 .main-navigation {
   display: flex;
+  justify-content: space-between;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
@@ -118,25 +119,31 @@ a.dot:hover{
   margin: 0 auto;
 }
 
-.main-navigation-wrapper .container {
-  display: flex;
-  align-items: flex-start;
-	flex-direction: row;
-}
-
 .main-header-logo {
-  order: -2;
+  position: absolute;
+  left: 50%;
+  margin-left: -70px;
   width: 138px;
   height: 56px;
 }
 
 .info-navigation,
 .coordinate-navigation{
+  display: flex;
   width: 530px;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.coordinate-navigation{
+  justify-content: flex-end;
+}
+
+.info-navigation li,
+.coordinate-navigation li{
+  width: 239px;
 }
 
 .info-navigation a,
@@ -165,11 +172,12 @@ figure{
   width: 1199px;
   height: 564px;
   margin: 0;
-  margin-bottom: 65px;
+  margin-bottom: 60px;
   padding: 0;
 }
 
 .dignities{
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -180,72 +188,45 @@ figure{
   padding: 0;
 }
 
-.dignities b{
+.page-title{
+  width: 450px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+
+  text-align: center;
 }
 
 .five-dignities{
+  margin: 0px;
+  margin-bottom: 48px;
+  padding: 0px;
+
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   color: #000000;
+
+  text-align: center;
 }
 
 .dignities-list{
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 55px;
   padding: 0;
 
   list-style: none;
 }
 
-.dignities-item-blue h2{
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-.dignities-item-blue .dignities-item-info,
-.dignities-item-blue span{
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  color: #ffffff;
-}
-
-.dignities-item-blue{
-  display: flex;
-  align-items: center;
-  width: 1200px;
-
-  background-color: #81b3d2;
-  background-image: url("../img/pattern-blue.png");
-  background-position: top center;
-  background-repeat: no-repeat;
-}
-
-.dignities-item-gray h2{
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: 700;
-  color: #000000;
-}
-
-.dignities-item-gray .dignities-item-info,
-.dignities-item-gray span{
-  font:inherit;
-}
-
-.dignities-item-gray{
-  display: flex;
-  align-items: center;
+.dignities-item{
   width: 400px;
+  height: 256px;
+  text-align: center;
 
   background-color: #eeeeee;
   background-image: url("../img/pattern-gray.png");
@@ -253,17 +234,64 @@ figure{
   background-repeat: no-repeat;
 }
 
-.dignities-first{
+.dignities-item:first-child{
   order: -2;
+}
+
+.opportunity{
+  order: -1;
+}
+
+.dignities-item:first-child,
+.dignities-item:nth-child(2){
+  display: flex;
+  width: 1200px;
+  text-align: center;
+}
+
+.dignities-item,
+.dignities-item-info{
+  width: 400px;
+  text-align: center;
+}
+
+.dignities-item-info h2{
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.dignities-item-info p,
+.dignities-item-info span{
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.dignities-item-image{
+  width: 800px;
+}
+
+.dignities-item-info{
+  background-color: #81b3d2;
+  background-image: url("../img/pattern-blue.png");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .opportunity-list{
   display: flex;
-  width: 1200px;
+  height: 330px;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.opportunity-item{
+  width: 400px;
 }
 
 .opportunity-item h2{
@@ -275,10 +303,6 @@ figure{
 
 .opportunity-item p{
   font:inherit;
-}
-
-.opportunity{
-  order:-1;
 }
 
 .search-tour{
@@ -419,6 +443,27 @@ figure{
   list-style: none;
 }
 
+.filter-results-item{
+  display: flex;
+  padding: 30px 0px;
+}
+
+.filter-results-image{
+  width: 135px;
+  height: 90px;
+  margin: 0px 30px 0px 70px;
+  padding: 0;
+}
+
+.filter-results-info{
+  width: 260px;
+}
+
+.filter-results-info h2{
+  margin: 0px;
+  padding: 0;
+}
+
 .filter-results-detail a{
   font: inherit;
   font-weight: 700;
@@ -450,6 +495,12 @@ figure{
 }
 
 .filter-results-rating{
+  width: 250px;
+  margin: 0;
+  margin-left: auto;
+}
+
+.filter-results-rating p{
   font: inherit;
   color: #666666;
 
