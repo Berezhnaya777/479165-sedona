@@ -9,22 +9,20 @@
   </head>
   <body class="inner-page">
     <header class="main-header">
-      <div class="main-navigation-wrapper">
-        <div class="container">
-          <a class="main-header-logo" href="index.html">
-            <img src="img/index-logo.png" width="138" height="70" alt="Логотип «Sedona»">
-          </a>
-          <nav class="main-navigation">
-            <ul class="info-navigation">
-              <li><a href="info.html">Информация</a></li>
-              <li><a href="photo-video.html">Фото и видео</a></li>
-            </ul>
-            <ul class="coordinate-navigation">
-              <li><a href="map-of-state.html">Карта штата</a></li>
-              <li><a href="hotels.html">Гостинницы</a></li>
-            </ul>
-          </nav>
-        </div>
+      <div class="container">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/index-logo.png" width="138" height="70" alt="Логотип «Sedona»">
+        </a>
+        <nav class="main-navigation">
+          <ul class="info-navigation">
+            <li><a href="info.html">Информация</a></li>
+            <li><a href="photo-video.html">Фото и видео</a></li>
+          </ul>
+          <ul class="coordinate-navigation">
+            <li><a href="map-of-state.html">Карта штата</a></li>
+            <li><a href="hotels.html">Гостинницы</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
@@ -33,44 +31,46 @@
       <section class="filters">
         <h1 class="visually-hidden">Подбор жилья по критериям</h1>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
-            <legend>Инфраструктура:</legend>
-            <ul>
-              <li class="filter-option">
-                <label for="filter-pool">Бассейн</label>
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
-              </li>
-              <li class="filter-option">
-                <label for="filter-parkland">Парковка</label>
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parkland" id="filter-parkland">
-              </li>
-              <li class="filter-option">
-                <label for="filter-wi-fi">Wi-fi</label>
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi">
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Тип жилья:</legend>
-            <ul>
-              <li class="filter-option">
-                <label for="filter-hotel">Гостинница</label>
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
-              </li>
-              <li class="filter-option">
-                <label for="filter-motel">Мотель</label>
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
-              </li>
-              <li class="filter-option">
-                <label for="filter-apartments">Апартаменты</label>
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Cтоимость в сутки(Р):</legend>
-            <!--Здесь будет форма-->
-          </fieldset>
+          <div class="filters-column">
+            <fieldset>
+              <legend>Инфраструктура:</legend>
+              <ul>
+                <li class="filter-option">
+                  <label for="filter-pool">Бассейн</label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
+                </li>
+                <li class="filter-option">
+                  <label for="filter-parkland">Парковка</label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parkland" id="filter-parkland">
+                </li>
+                <li class="filter-option">
+                  <label for="filter-wi-fi">Wi-fi</label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Тип жилья:</legend>
+              <ul>
+                <li class="filter-option">
+                  <label for="filter-hotel">Гостинница</label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+                </li>
+                <li class="filter-option">
+                  <label for="filter-motel">Мотель</label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
+                </li>
+                <li class="filter-option">
+                  <label for="filter-apartments">Апартаменты</label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Cтоимость в сутки(Р):</legend>
+              <!--Здесь будет форма-->
+            </fieldset>
+          </div>
           <button type="submit" class="button filter-button">Показать</button>
         </form>
       </section>

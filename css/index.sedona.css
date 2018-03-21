@@ -108,12 +108,6 @@ a.dot:hover{
   background-color: #ffffff;
 }
 
-.main-navigation-wrapper {
-  width: 100%;
-
-  background-color: #ffffff;
-}
-
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -229,8 +223,19 @@ figure{
   text-align: center;
 
   background-color: #eeeeee;
-  background-image: url("../img/pattern-gray.png");
-  background-position: top center;
+}
+
+.dignities-item:first-child .dignities-item-image{
+  width: 800px;
+  height: 256px;
+  background-image: url("../img/vicinity-Sedona.jpg");
+  background-repeat: no-repeat;
+}
+
+.dignities-item:nth-child(2) .dignities-item-image{
+  width: 800px;
+  height: 256px;
+  background-image: url("../img/devil's-bridge.jpg");
   background-repeat: no-repeat;
 }
 
@@ -276,9 +281,6 @@ figure{
 
 .dignities-item-info{
   background-color: #81b3d2;
-  background-image: url("../img/pattern-blue.png");
-  background-position: top center;
-  background-repeat: no-repeat;
 }
 
 .opportunity-list{
@@ -371,6 +373,11 @@ figure{
   line-height: 21px;
   font-weight: 700;
   color: #ffffff;
+}
+
+.filters-column{
+  display: flex;
+  justify-content: space-between;
 }
 
 .filter ul {
