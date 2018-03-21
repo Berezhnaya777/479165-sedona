@@ -380,6 +380,12 @@ figure{
   justify-content: space-between;
 }
 
+.filter-cost{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .filter ul {
   list-style: none;
 }
@@ -391,24 +397,21 @@ figure{
 }
 
 .sorting h2{
+  margin-left: 70px;
+  margin-right:50px;
+
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
 }
 
-.sorting fieldset {
-  border: none;
-}
+.sorting-catalog p{
+  margin-right: 36px;
 
-.sorting legend {
   font-size: 16px;
   line-height: 21px;
-  color: #ffffff;
-}
-
-.sorting ul {
-  list-style: none;
+  color: #000000;
 }
 
 .sorting-option a{
