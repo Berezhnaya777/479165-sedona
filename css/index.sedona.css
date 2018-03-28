@@ -214,8 +214,8 @@ input[type="radio"].visually-hidden{
 }
 
 figure{
-  width: 1199px;
-  height: 564px;
+  width: 1195px;
+  height: 508px;
   margin: 0;
   margin-bottom: 60px;
   padding: 0;
@@ -516,7 +516,7 @@ figure{
 }
 
 .search-tour .interested{
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 
   font-size: 30px;
   line-height: 36px;
@@ -599,7 +599,7 @@ figure{
 }
 
 .appointment-item:nth-child(3) label{
-  margin-right: 40px;
+  margin-right: 42px;
 }
 
 .appointment-item:nth-child(4) label{
@@ -616,7 +616,10 @@ figure{
 
 .appointment-item:nth-child(3) input,
 .appointment-item:nth-child(4) input{
-  width: 118px;
+  width: 38px;
+  height: 38px;
+  margin: 0;
+  padding: 0;
 
   text-align: center;
 }
@@ -643,6 +646,7 @@ figure{
 .appointment .button{
   display: block;
   width: 100%;
+  padding: 19px 0;
 }
 
 .appointment .search{
@@ -653,31 +657,15 @@ figure{
   padding: 30px;
 }
 
-.appointment-item label{
+.appointment-item{
   position: relative;
 }
 
-.appointment-item:first-child label::after,
-.appointment-item:nth-child(2) label::after{
+.appointment-item span::before{
   content: "";
   position: absolute;
-  right: -375px;
-  top: 0;
-
-  width: 21px;
-  height: 22px;
-
-  background-image: url("../img/calendar-black.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.appointment-item:first-child label::after:hover,
-.appointment-item:nth-child(2) label::hover{
-  content: "";
-  position: absolute;
-  right: -375px;
-  top: 0;
+  right: 20px;
+  top: 10px;
 
   width: 21px;
   height: 22px;
@@ -687,40 +675,58 @@ figure{
   background-position: 0 0;
 }
 
+.appointment-item span:hover::before{
+  fill:#000000;
+}
+
+.appointment-item span:hover::before{
+  fill:#81b3d2;
+}
+
+.appointment-item:nth-child(3),
+.appointment-item:nth-child(4){
+  display: inline-block;
+  vertical-align: bottom;
+
+  font-size: 0;
+}
+
 button.minus{
-  background: none;
+  width: 38px;
+	height: 38px;
+
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #a9a9a9;
+
+	background-color: #f2f2f2;
   border: none;
   border-radius: 0;
 }
 
 button.plus{
-  background: none;
+  width: 38px;
+	height: 38px;
+
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #a9a9a9;
+
+	background-color: #f2f2f2;
   border: none;
   border-radius: 0;
 }
 
-.appointment-item:nth-child(3) button.minus{
-  position: absolute;
-
-  left: 180px;
+button.minus:hover,
+button.plus:hover{
+  color: #000000;
 }
 
-.appointment-item:nth-child(4) button.minus{
-  position: absolute;
-
-  left: 414px;
-}
-
-.appointment-item:nth-child(3) button.plus{
-  position: absolute;
-
-  left: 255px;
-}
-
-.appointment-item:nth-child(4) button.plus{
-  position: absolute;
-
-  left: 489px;
+button.minus:focus,
+button.plus:focus{
+  color: #81b3d2;
 }
 
 .filters{
@@ -795,6 +801,11 @@ button.plus{
   opacity: 0.3;
 }
 
+.filter-input:active + label{
+  color: #766357;
+  opacity: 0.3;
+}
+
 .filter-input-checkbox + label::before{
   content: "";
 
@@ -824,6 +835,14 @@ button.plus{
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.filter-input-checkbox:disabled + label::before{
+  border-color:#6a6a6a;
+}
+
+.filter-input-checkbox:checked:disabled + label::before{
+  background-image: url("../img/checkbox-on-disabled.svg");
 }
 
 .filter-cost{
@@ -966,6 +985,8 @@ button.plus{
 }
 
 a.sorting-option-up{
+  content: "";
+
   margin-right: 15px;
   position: absolute;
   top: 5px;
@@ -982,6 +1003,8 @@ a.sorting-option-up{
 }
 
 a.sorting-option-down{
+  content: "";
+
   position: absolute;
   top: 5px;
 
@@ -992,13 +1015,15 @@ a.sorting-option-down{
   background-repeat: no-repeat;
 }
 
-a.sorting-option-up:hover polygon,
-a.sorting-option-down:hover polyline{
-  fill: #231f20;
+a.sorting-option-up:hover,
+a.sorting-option-down:hover{
+  background-image: url("../img/icon-down-black.svg");
 }
 
-a.sorting-option-up:focus polygon,
-a.sorting-option-down:focus polyline{
+a.sorting-option-up:focus,
+a.sorting-option-up:active,
+a.sorting-option-down:focus,
+a.sorting-option-down:active{
   fill: #81b3d2;
 }
 
