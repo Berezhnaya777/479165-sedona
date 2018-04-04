@@ -1,0 +1,259 @@
+body{
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  background-image: url("img/main-image.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.dignities-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.dignities-item{
+  width: 400px;
+  height: 256px;
+  text-align: center;
+
+  background-color: #eeeeee;
+}
+
+.dignities-item h2{
+  margin: 45px 130px 25px 130px;
+  padding: 0;
+}
+
+.dignities-item:nth-child(5) h2{
+  margin: 45px 150px 25px 150px;
+  padding: 0;
+}
+
+.dignities-item:first-child .dignities-item-image{
+  width: 800px;
+  height: 256px;
+
+  background-image: url("../img/vicinity-Sedona.jpg");
+  background-repeat: no-repeat;
+}
+
+.dignities-item:nth-child(2) .dignities-item-image{
+  width: 800px;
+  height: 256px;
+
+  background-image: url("../img/devil's-bridge.jpg");
+  background-repeat: no-repeat;
+}
+
+.dignities-item:first-child{
+  order: -2;
+}
+
+.opportunity{
+  order: -1;
+}
+
+.dignities-item:first-child,
+.dignities-item:nth-child(2){
+  display: flex;
+  width: 1200px;
+  text-align: center;
+}
+
+.dignities-item,
+.dignities-item-info{
+  width: 400px;
+  text-align: center;
+}
+
+.dignities-item-info h2{
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.dignities-item-info p,
+.dignities-item-info span{
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.dignities-item-info p,
+.dignities-item p{
+  padding-top: 28px;
+}
+
+.dignities-item-info .dignities-item-number{
+  position: relative;
+}
+
+.dignities-item-info .dignities-item-number::before{
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 20px;
+
+  width: 9px;
+  height: 2px;
+
+  background-color: #ffffff;
+}
+
+.dignities-item-info .dignities-item-number::after{
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  right: 20px;
+
+  width: 9px;
+  height: 2px;
+
+  background-color: #ffffff;
+}
+
+.dignities-item .dignities-item-number{
+  position: relative;
+}
+
+.dignities-item span::before{
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 20px;
+
+  width: 9px;
+  height: 2px;
+
+  background-color: #333333;
+}
+
+.dignities-item span::after{
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  right: 20px;
+
+  width: 9px;
+  height: 2px;
+
+  background-color: #333333;
+}
+
+.dignities-item-image{
+  width: 800px;
+}
+
+.dignities-item-info{
+  background-color: #81b3d2;
+}
+
+.opportunity-list{
+  display: flex;
+  height: 330px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.opportunity-item{
+  width: 400px;
+}
+
+.opportunity-item h2{
+  margin: 0;
+  margin-top: 160px;
+  margin-bottom: 24px;
+  padding: 0;
+
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.opportunity-item h2{
+  position: relative;
+}
+
+.opportunity-item h2 .house::before{
+  content: "";
+
+  position: absolute;
+  top: -100px;
+  left: 50%;
+
+  width: 77px;
+  height: 77px;
+  margin-left: -40px;
+
+  background-image: url("../img/house.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.opportunity-item h2 .food::before{
+  content: "";
+
+  position: absolute;
+  top: -100px;
+  left: 50%;
+
+  width: 77px;
+  height: 77px;
+  margin-left: -40px;
+
+  background-image: url("../img/food.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.opportunity-item h2 .prize::before{
+  content: "";
+
+  position: absolute;
+  top: -100px;
+  left: 50%;
+
+  width: 77px;
+  height: 77px;
+  margin-left: -40px;
+
+  background-image: url("../img/prize.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.opportunity-item p{
+  margin: 0;
+  margin-left: 75px;
+  margin-right: 85px;
+
+  font:inherit;
+}
