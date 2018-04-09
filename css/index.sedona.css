@@ -345,13 +345,27 @@ figure{
 
 .dignities-item-info p,
 .dignities-item-info span{
-  margin: 0;
+  width: 305px;
+  margin: 0 auto;
   padding: 0;
 
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #ffffff;
+}
+
+.dignities-item p,
+.dignities-item span{
+  width: 265px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.opportunity-item-advice{
+  width: 265px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .dignities-item-info p,
@@ -436,11 +450,11 @@ figure{
   list-style: none;
 }
 
-.opportunity-item{
+.opportunity-item-advice{
   width: 400px;
 }
 
-.opportunity-item h2{
+.opportunity-item-advice h2{
   margin: 0;
   margin-top: 160px;
   margin-bottom: 24px;
@@ -452,11 +466,11 @@ figure{
   color: #000000;
 }
 
-.opportunity-item h2{
+.opportunity-item-advice h2{
   position: relative;
 }
 
-.opportunity-item h2 .house::before{
+.opportunity-item-advice h2 .house::before{
   content: "";
 
   position: absolute;
@@ -473,7 +487,7 @@ figure{
   border: none;
 }
 
-.opportunity-item h2 .food::before{
+.opportunity-item-advice h2 .food::before{
   content: "";
 
   position: absolute;
@@ -490,7 +504,7 @@ figure{
   border: none;
 }
 
-.opportunity-item h2 .prize::before{
+.opportunity-item-advice h2 .prize::before{
   content: "";
 
   position: absolute;
@@ -507,8 +521,9 @@ figure{
   border: none;
 }
 
-.opportunity-item p{
-  margin: 0;
+.opportunity-item-advice p{
+  width: 285px;
+  margin: 0 auto;
   padding: 0;
 
   font:inherit;
