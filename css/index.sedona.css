@@ -140,10 +140,6 @@ input[type="radio"].visually-hidden{
   border: none;
 }
 
-.main-header{
-  display: flex;
-}
-
 .main-navigation{
   display: flex;
   justify-content: space-between;
@@ -185,7 +181,7 @@ input[type="radio"].visually-hidden{
   align-items: center;
   flex-wrap: wrap;
   width: 239px;
-  height: 56px;
+  min-height: 56px;
 }
 
 .info-navigation li{
@@ -199,7 +195,6 @@ input[type="radio"].visually-hidden{
 .info-navigation li:last-child{
   padding-left: 75px;
 }
-
 
 .coordinate-navigation li{
   text-align: right;
@@ -216,7 +211,7 @@ input[type="radio"].visually-hidden{
 .info-navigation a,
 .coordinate-navigation a{
   margin: 0;
-  padding: 21px 0;
+  padding: 14px 0;
 
   color: #000000;
 }
@@ -250,13 +245,6 @@ figure{
   padding-top: 60px;
 
   background-color: #ffffff;
-}
-
-.dignities-title{
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
 }
 
 .page-title{
