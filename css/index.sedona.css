@@ -10,7 +10,6 @@ body{
   text-transform: uppercase;
 
   background-color: #f2f2f2;
-  background-image: url("img/main-image.png");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -122,7 +121,7 @@ input[type="radio"].visually-hidden{
 
   margin: 0;
   margin-left: 83px;
-  padding: 6px 35px;
+  padding: 6px 34px;
 
   font: inherit;
   color: #ffffff;
@@ -159,8 +158,8 @@ input[type="radio"].visually-hidden{
 
 .main-header-logo{
   position: absolute;
-  left: 50%;
-  margin-left: -69px;
+  left: 600px;
+  margin-left: -37px;
 
   width: 138px;
   height: 70px;
@@ -242,7 +241,7 @@ figure{
 
 .dignities{
   text-align: center;
-  padding-top: 60px;
+  padding-top: 59px;
 
   background-color: #ffffff;
 }
@@ -250,7 +249,7 @@ figure{
 .page-title{
   width: 440px;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
   padding: 0;
 
   font-size: 21px;
@@ -357,9 +356,13 @@ figure{
 
 .dignities-item p,
 .dignities-item span{
-  width: 265px;
+  width: 280px;
   margin: 0 auto;
   padding: 0;
+}
+
+.dignities-item:nth-child(2) p{
+  width: 305px;
 }
 
 .opportunity-item-advice{
@@ -574,6 +577,7 @@ figure{
   position: absolute;
   top: -86px;
   left: 317px;
+  z-index: 3;
 
   width: 568px;
   margin: 0 auto;
@@ -581,10 +585,56 @@ figure{
   background-color: #ffffff;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-40px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal{
+  display: none;
+}
+
+.modal-show{
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 .appointment-form{
   display: flex;
   flex-wrap: wrap;
-  margin: 54px 56px;
+  margin: 53px 56px 54px 55px;
 
   text-align: left;
 }
@@ -613,7 +663,7 @@ figure{
 .appointment-item:nth-child(3){
   width:225px;
   margin: 0;
-  margin-right: 51px;
+  margin-right: 52px;
   padding: 0;
 }
 
@@ -630,6 +680,22 @@ figure{
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+}
+
+::-webkit-input-placeholder{
+   color: #000000;
+}
+
+::-moz-placeholder{
+   color: #000000;
+}
+
+:-moz-placeholder{
+   color: #000000;
+}
+
+:-ms-input-placeholder{
+   color: #000000;
 }
 
 .appointment-item:first-child label{
@@ -689,11 +755,11 @@ figure{
 .appointment .button{
   display: block;
   width: 100%;
-  padding: 18px 0;
+  padding: 15px 0;
 }
 
 .appointment .search{
-  margin-top: 53px;
+  margin-top: 55px;
 }
 
 .appointment .button-brown{
@@ -744,8 +810,6 @@ button.minus{
 }
 
 button.plus{
-  display: block;
-
   width: 38px;
 	height: 38px;
   margin: 0;
@@ -770,8 +834,24 @@ button.plus:focus line{
   color: #81b3d2;
 }
 
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
+}
+
+.modal-map p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
+}
+
 .filters{
-  padding: 27px 73px 31px 73px;
+  padding: 27px 73px 32px 73px;
   background-color: #000000;
   background-image: url("../img/filter-background.jpg");
   background-position: top center;
@@ -790,7 +870,7 @@ button.plus:focus line{
 
 .filter legend{
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
   padding: 0;
 
   font-size: 16px;
@@ -901,7 +981,7 @@ button.plus:focus line{
 }
 
 .filter-cost{
-  width: 314px;
+  width: 316px;
 
   color: #ffffff;
   text-transform: uppercase;
@@ -952,12 +1032,12 @@ button.plus:focus line{
 }
 
 .price-controls .min-price{
-  width: 90px;
+  width: 91px;
   padding-left: 64px;
 }
 
 .price-controls .max-price{
-  width: 90px;
+  width: 91px;
   padding-left: 56px;
 }
 
@@ -1176,12 +1256,12 @@ a.sorting-option-down{
 .filter-results-image{
   width: 135px;
   height: 90px;
-  margin: 0px 30px 0px 73px;
+  margin: 0px 30px 0px 72px;
   padding: 0;
 }
 
 .filter-results-info{
-  width: 260px;
+  width: 262px;
   margin: 0;
   margin-top: -5px;
   padding: 0;
@@ -1234,17 +1314,8 @@ a.sorting-option-down{
   margin-right: 6px;
 }
 
-.filter-results-detail{
-
-}
-.filter-results-detail a{
-  margin: 0;
-  margin-bottom: 15px;
-  padding: 0;
-
-  font: inherit;
-  font-weight: 700;
-  color: #ffffff;
+.filter-results-info .button{
+  margin-right: 2px;
 }
 
 .filter-results-rating{
@@ -1288,16 +1359,20 @@ a.sorting-option-down{
 }
 
 .main-footer{
+  position: absolute;
+
   width: 1200px;
   margin: 0 auto;
   margin-top: -126px;
-  padding: 36px 0;
+  padding: 0;
+  padding-top: 34px;
+  padding-bottom: 36px;
+  z-index: 4;
 
   color: #000000;
   text-align: center;
 
   background-color: #ffffff;
-  background-image: url("img/light.png");
   background-position: top center;
   background-repeat: no-repeat;
   opacity: 0.9;
@@ -1305,14 +1380,13 @@ a.sorting-option-down{
 
 .inner-page .main-footer{
   width: 1200px;
-  margin: 0 auto;
+  margin: 0 32px;
   padding: 36px 0;
 
   color: #000000;
   text-align: center;
 
   background-color: #ffffff;
-  background-image: url("img/light.png");
   background-position: top center;
   background-repeat: no-repeat;
 }
