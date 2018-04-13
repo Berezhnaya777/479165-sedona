@@ -139,6 +139,10 @@ input[type="radio"].visually-hidden{
   border: none;
 }
 
+.main-header{
+  position: relative;
+}
+
 .main-navigation{
   display: flex;
   justify-content: space-between;
@@ -158,8 +162,8 @@ input[type="radio"].visually-hidden{
 
 .main-header-logo{
   position: absolute;
-  left: 600px;
-  margin-left: -37px;
+  left: 50%;
+  margin-left: -69px;
 
   width: 138px;
   height: 70px;
@@ -547,7 +551,7 @@ figure{
 
 .search-tour .container{
   width: 445px;
-  margin-bottom: 133px;
+  margin-bottom: 52px;
 }
 
 .search-tour .interested{
@@ -569,18 +573,10 @@ figure{
   color: #333333;
 }
 
-.map{
-  position: relative;
-}
-
 .appointment{
-  position: absolute;
-  top: -86px;
-  left: 317px;
-  z-index: 3;
-
-  width: 568px;
+width: 568px;
   margin: 0 auto;
+  padding: 0;
 
   background-color: #ffffff;
 }
@@ -834,17 +830,8 @@ button.plus:focus line{
   color: #81b3d2;
 }
 
-.modal-map iframe {
-  position: relative;
-  z-index: 2;
-
-  border: none;
-}
-
 .modal-map p {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   z-index: 1;
 
   margin: 0;
@@ -1359,11 +1346,12 @@ a.sorting-option-down{
 }
 
 .main-footer{
-  position: absolute;
+  position: relative;
 
   width: 1200px;
   margin: 0 auto;
-  margin-top: -126px;
+  margin-top: 0px;
+  bottom: 126px;
   padding: 0;
   padding-top: 34px;
   padding-bottom: 36px;
