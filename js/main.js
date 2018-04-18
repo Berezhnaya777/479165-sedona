@@ -21,6 +21,8 @@ try {
   isStorageSupport = false;
 }
 
+popup.classList.add("modal-show");
+
 appointment.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.toggle("modal-show");
