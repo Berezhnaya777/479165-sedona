@@ -320,7 +320,7 @@ figure{
 .dignities-item:first-child{
   width: 1200px;
 
-  background: #81b3d2 url("../img/vicinity-Sedona.jpg");
+  background: #81b3d2 url("../img/vicinity-sedona.jpg");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -330,12 +330,19 @@ figure{
 
   background: #81b3d2 url("../img/devil's-bridge.jpg");
   background-repeat: no-repeat;
-  background-position: left;
 }
 
 .dignities-item-info{
   display: block;
   width: 400px;
+
+  background-color: #81b3d2;
+}
+
+.dignities-item:nth-child(2) .dignities-item-info{
+  display: block;
+  width: 400px;
+  margin-left: auto;
 
   background-color: #81b3d2;
 }
@@ -651,6 +658,7 @@ figure{
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  justify-content: space-between;
 }
 
 .appointment-item:first-child{
@@ -708,10 +716,10 @@ figure{
 }
 
 .appointment-item:first-child label{
-  margin-right: 22px;
+  margin-right: 20px;
 }
 .appointment-item:nth-child(2) label{
-  margin-right: 18px;
+  margin-right: 17px;
 }
 
 .appointment-item:nth-child(3) label{
@@ -729,7 +737,7 @@ figure{
 
   width: 345px;
   height: 40px;
-  padding: 12px;
+  padding: 0 12px;
 }
 
 .appointment-item:nth-child(3) input,
@@ -810,7 +818,7 @@ button.minus{
   display: block;
 
   width: 38px;
-	height: 38px;
+  height: 38px;
   margin: 0;
   padding: 0;
 
@@ -818,14 +826,14 @@ button.minus{
   font-weight: 700;
   color: #a9a9a9;
 
-	background-color: #f2f2f2;
+  background-color: #f2f2f2;
   border: none;
   border-radius: 0;
 }
 
 button.plus{
   width: 38px;
-	height: 38px;
+  height: 38px;
   margin: 0;
   padding: 0;
 
@@ -833,7 +841,7 @@ button.plus{
   font-weight: 700;
   color: #a9a9a9;
 
-	background-color: #f2f2f2;
+  background-color: #f2f2f2;
   border: none;
   border-radius: 0;
 }
