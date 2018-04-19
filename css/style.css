@@ -158,6 +158,8 @@ input[type="radio"].visually-hidden{
 }
 
 .main-navigation{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -189,11 +191,19 @@ input[type="radio"].visually-hidden{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 478px;
+  width: 490px;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.main-navigation ul:first-child{
+  padding-left: 70px;
+}
+
+.main-navigation ul:last-child{
+  padding-right: 72px;
 }
 
 .info-navigation,
@@ -210,33 +220,21 @@ input[type="radio"].visually-hidden{
 
 .info-navigation li,
 .coordinate-navigation li{
-  width: 239px;
+  width: 50%;
   min-height: 56px;
   padding: 14px 0;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: left;
 
-  box-sizing: border-box;
-}
+  -webkit-box-sizing: border-box;
 
-.info-navigation li:first-child{
-  padding-left: 72px;
-}
-
-.info-navigation li:last-child{
-  padding-left: 73px;
+          box-sizing: border-box;
 }
 
 .coordinate-navigation li{
   text-align: right;
-}
-
-.coordinate-navigation li:first-child{
-  padding-right: 77px;
-}
-
-.coordinate-navigation li:last-child{
-  padding-right: 72px;
 }
 
 .info-navigation a,
@@ -321,8 +319,8 @@ figure{
 
 .dignities-item:first-child{
   width: 1200px;
-  height: 256px;
 
+  background-color: #81b3d2;
   background: url("../img/vicinity-Sedona.jpg");
   background-repeat: no-repeat;
   background-position: right;
@@ -330,8 +328,8 @@ figure{
 
 .dignities-item:nth-child(2){
   width: 1200px;
-  height: 256px;
 
+  background-color: #81b3d2;
   background-image: url("../img/devil's-bridge.jpg");
   background-repeat: no-repeat;
   background-position: left;
@@ -358,11 +356,6 @@ figure{
   padding: 0;
 }
 
-.dignities-item:nth-child(5) h2{
-  margin: 45px 150px 25px 150px;
-  padding: 0;
-}
-
 .dignities-item:first-child{
   -webkit-box-ordinal-group: -1;
   -ms-flex-order: -2;
@@ -377,9 +370,16 @@ figure{
 
 .dignities-item:first-child,
 .dignities-item:nth-child(2){
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .dignities-item-info h2{
@@ -653,7 +653,7 @@ figure{
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 55px;
+  margin: 54px 55px 55px 56px;
 
   text-align: left;
 }
@@ -686,7 +686,7 @@ figure{
 .appointment-item:nth-child(3){
   width:225px;
   margin: 0;
-  margin-right: 53px;
+  margin-right: 52px;
   padding: 0;
 }
 
@@ -782,6 +782,8 @@ figure{
   display: block;
   width: 100%;
   padding: 15px 0;
+
+  font-weight: 700;
 }
 
 .appointment .search{
@@ -1304,7 +1306,7 @@ a.sorting-option-down{
 }
 
 .filter-results-info{
-  width: 262px;
+  width: 270px;
   margin: 0;
   margin-top: -5px;
   padding: 0;
