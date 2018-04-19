@@ -224,13 +224,13 @@ input[type="radio"].visually-hidden{
   min-height: 56px;
   padding: 14px 0;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: left;
 
   -webkit-box-sizing: border-box;
 
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .coordinate-navigation li{
@@ -320,8 +320,7 @@ figure{
 .dignities-item:first-child{
   width: 1200px;
 
-  background-color: #81b3d2;
-  background: url("../img/vicinity-Sedona.jpg");
+  background: #81b3d2 url("../img/vicinity-Sedona.jpg");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -329,8 +328,7 @@ figure{
 .dignities-item:nth-child(2){
   width: 1200px;
 
-  background-color: #81b3d2;
-  background-image: url("../img/devil's-bridge.jpg");
+  background: #81b3d2 url("../img/devil's-bridge.jpg");
   background-repeat: no-repeat;
   background-position: left;
 }
@@ -375,11 +373,11 @@ figure{
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .dignities-item-info h2{
@@ -571,18 +569,6 @@ figure{
   z-index: 3;
 
   background-color: #ffffff;
-}
-
-@-webkit-keyframes bounce{
-  0%{
-    -webkit-transform: translateY(-40px);
-            transform: translateY(-40px);
-  }
-
-  100%{
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
 }
 
 @keyframes bounce{
