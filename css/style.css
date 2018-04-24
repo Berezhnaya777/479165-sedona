@@ -584,11 +584,13 @@ figure{
 @-webkit-keyframes bounce{
   0%{
     -webkit-transform: translateY(-40px);
+    -ms-transform: translateY(-40px);
     transform: translateY(-40px);
   }
 
   100%{
     -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
     transform: translateY(0px);
   }
 }
@@ -596,11 +598,13 @@ figure{
 @keyframes bounce{
   0%{
     -webkit-transform: translateY(-40px);
+    -ms-transform: translateY(-40px);
     transform: translateY(-40px);
   }
 
   100%{
     -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
     transform: translateY(0px);
   }
 }
@@ -609,7 +613,8 @@ figure{
   0%,
   100%{
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
   }
 
   10%,
@@ -618,7 +623,8 @@ figure{
   70%,
   90%{
     -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    transform: translateX(-10px);
   }
 
   20%,
@@ -626,7 +632,8 @@ figure{
   60%,
   80%{
     -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
   }
 }
 
@@ -634,7 +641,8 @@ figure{
   0%,
   100%{
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
   }
 
   10%,
@@ -643,7 +651,8 @@ figure{
   70%,
   90%{
     -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    transform: translateX(-10px);
   }
 
   20%,
@@ -651,7 +660,8 @@ figure{
   60%,
   80%{
     -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
   }
 }
 .modal{
@@ -1289,7 +1299,7 @@ a:active polyline,
   color: #81b3d2;
 }
 
-.sorting-option a:focus{
+.sorting-option a:active{
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
@@ -1298,8 +1308,7 @@ a:active polyline,
   border-bottom: none;
 }
 
-.sorting-option a.current,
-.sorting-option a:active{
+.sorting-option .current{
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
