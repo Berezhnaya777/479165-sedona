@@ -29,7 +29,7 @@ a{
 }
 
 a.dot{
-  border-bottom: 1px dashed #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -75,13 +75,6 @@ input[type="radio"].visually-hidden{
   border: none;
 }
 
-.button:active{
-  opacity: 0.3;
-
-  background-color: #5496bd;
-  border: none;
-}
-
 .button-brown{
   font-size: 21px;
   line-height: 26px;
@@ -101,9 +94,16 @@ input[type="radio"].visually-hidden{
 }
 
 .button-brown:focus{
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.302);
 
   background-color: #503e33;
+  border: none;
+}
+
+.button-blue:focus{
+  color: rgba(255, 255, 255, 0.302);
+
+  background-color: #5496bd;
   border: none;
 }
 
@@ -191,23 +191,18 @@ input[type="radio"].visually-hidden{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 490px;
+  width: 1200px;
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.main-navigation ul:first-child{
-  padding-left: 70px;
+.main-navigation{
+  padding: 0 71px 0 72px;
 }
 
-.main-navigation ul:last-child{
-  padding-right: 72px;
-}
-
-.info-navigation,
-.coordinate-navigation{
+.info-navigation{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,9 +213,8 @@ input[type="radio"].visually-hidden{
   flex-wrap: wrap;
 }
 
-.info-navigation li,
-.coordinate-navigation li{
-  width: 50%;
+.info-navigation li{
+  width: 288px;
   min-height: 56px;
   padding: 14px 0;
   -webkit-box-align: center;
@@ -233,36 +227,41 @@ input[type="radio"].visually-hidden{
   box-sizing: border-box;
 }
 
-.coordinate-navigation li{
+.info-navigation li:first-child{
+  width: 240px;
+}
+
+.info-navigation li:last-child{
+  width: 241px;
+}
+
+.info-navigation li:nth-child(3),
+.info-navigation li:last-child{
   text-align: right;
 }
 
-.info-navigation a,
-.coordinate-navigation a{
+.info-navigation a{
   margin: 0;
   padding: 0;
 
   color: #000000;
 }
 
-.info-navigation a:hover,
-.coordinate-navigation a:hover{
+.info-navigation a:hover{
   color: #81b3d2;
 }
 
-.info-navigation a:focus,
-.coordinate-navigation a:focus{
+.info-navigation a:focus{
   color: #000000;
 
   opacity: 0.3;
 }
 
-.info-navigation a:active,
-.coordinate-navigation a:active{
+.info-navigation a:active{
   color: #766357;
 }
 
-.coordinate-navigation-current a{
+.info-navigation-current a{
   color: #766357;
 }
 
@@ -328,7 +327,7 @@ figure{
 .dignities-item:nth-child(2){
   width: 1200px;
 
-  background: #81b3d2 url("../img/devil's-bridge.jpg");
+  background: #81b3d2 url("../img/devils-bridge.jpg");
   background-repeat: no-repeat;
 }
 
@@ -578,6 +577,18 @@ figure{
   background-color: #ffffff;
 }
 
+@-webkit-keyframes bounce{
+  0%{
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);
+  }
+
+  100%{
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
 @keyframes bounce{
   0%{
     -webkit-transform: translateY(-40px);
@@ -590,31 +601,55 @@ figure{
   }
 }
 
-@-webkit-keyframes shake{
+@-webkit-keyframes shake {
   0%,
-  100%{
+  100% {
     -webkit-transform: translateX(0);
-    transform: translateX(0);
+            transform: translateX(0);
   }
 
   10%,
   30%,
   50%,
   70%,
-  90%{
+  90% {
     -webkit-transform: translateX(-10px);
-    transform: translateX(-10px);
+            transform: translateX(-10px);
   }
 
   20%,
   40%,
   60%,
-  80%{
+  80% {
     -webkit-transform: translateX(10px);
-    transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
 .modal{
   position: absolute;
   display: block;
@@ -862,6 +897,7 @@ button.plus:focus{
   width: 1200px;
   min-height: 594px;
 
+  background-color: #f2f1ef;
   background-image:url("../img/map.jpg");
   background-repeat: no-repeat;
 
@@ -881,7 +917,7 @@ button.plus:focus{
 
 .filters{
   padding: 27px 73px 32px 73px;
-  background-color: #000000;
+  background-color: #514c49;
   background-image: url("../img/filter-background.jpg");
   background-position: top center;
   background-repeat: no-repeat;
@@ -995,8 +1031,35 @@ button.plus:focus{
   background-position: 0 0;
 }
 
-.accommodation .filter-input-checkbox:checked + label::before{
+.accommodation .filter-input-checkbox + label::before{
+  content: "";
+
+  position: absolute;
   left: -42px;
+  top: 0px;
+
+  width: 19px;
+  height: 19px;
+
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+}
+
+.accommodation .filter-input-checkbox:checked + label::before{
+  content: "";
+
+  position: absolute;
+  left: -42px;
+  top: 0px;
+
+  width: 27px;
+  height: 23px;
+
+  border: none;
+
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .filter-input-checkbox:disabled + label::before{
@@ -1212,26 +1275,26 @@ a.sorting-option-down{
   height: 10px;
 }
 
-.sorting-option-up a:hover polygon,
-.sorting-option-down a:hover polyline{
+a:hover polygon,
+a:hover polyline{
   fill: #000000;
 }
 
-.sorting-option-up a:focus polygon,
-.sorting-option-up a:active polygon,
-.sorting-option-down a:focus polyline,
-.sorting-option-down a:active polyline{
+a:focus polygon,
+a:active polygon,
+a:focus polyline,
+a:active polyline{
   fill: #81b3d2;
 }
 
-.sorting-option-up-current a polygon,
-.sorting-option-down-current a polyline,
-.sorting-option-up-current a:hover polygon,
-.sorting-option-down-current a:hover polyline,
-.sorting-option-up-current a:focus polygon,
-.sorting-option-up-current a:active polygon,
-.sorting-option-down-current a:focus polyline,
-.sorting-option-down-current a:active polyline{
+.sorting-option-up-current a,
+.sorting-option-down-current a,
+.sorting-option-up-current a:hover,
+.sorting-option-down-current a:hover,
+.sorting-option-up-current a:focus,
+.sorting-option-up-current a:active,
+.sorting-option-down-current a:focus,
+.sorting-option-down-current a:active{
   fill: #81b3d2;
 }
 
